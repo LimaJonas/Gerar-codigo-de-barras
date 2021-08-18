@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+</head>
+<body class="receipt">
+  <input type="text" id="texto">
+  <button onclick="barra()">Gerar</button>
+  <br><br><Br>
+  <svg id="barcode"></svg>
+<script src="apontamentos/vendor/jquery/jquery.min.js"></script>
+<script src="apontamentos/js/JsBarcode.all.min.js"></script>
+<script>
+function barra(){
+    var id = $("#texto").val();
+    JsBarcode("#barcode",id);
+}
+</script>
+</body>
+</html>
